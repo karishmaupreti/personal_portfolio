@@ -163,14 +163,40 @@ section{
 .btn-box{
     display: flex;
     justify-content: space-between;
-    width: 320px;
-    height: 45px;
+    width: 100px;
+    height: 80px;
+    
+}
+.btn-box1{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    
 }
 .btn-box a.btn{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 500px;
+    height: 100%;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid var(--hover-color);
+}
+.btn-box1 a.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
     height: 100%;
     background: var(--hover-color);
     color: var(--bg-color);
@@ -212,8 +238,16 @@ a.btn:nth-child(2):hover{
     color: var(--bg-color);
 }
 .new-box a{
+    display: inline-block;
+
     border-radius: 30px;
-    margin-left: 100px;
+    width:500px ;
+    margin-left: 400px;
+   cursor: pointer;
+   text-align: center;
+   padding: 10px;
+
+
 }
 
 .social-icons{
@@ -531,6 +565,7 @@ section {
 }
 
 
+
 /*----------------------------------------------media query-------------------------------------------------------*/
 @media(max-width:477px){
    #menu-icon{
@@ -622,8 +657,54 @@ section {
     font-weight: 500;
     font-size: 1rem;
    }
-   .new-box1 {
-    margin-left: 25px;
+.new-box1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto; /* Center the container itself */
+    }
+   
+    .btn-box1{
+    margin-left: 100px;
+    width: 50px;
+    height: 80px;
+     display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align items horizontally */
+    margin-top: 20px;
+    
+}
+
+.btn-box1 a.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.6s;
+    box-shadow: var(--neon-box-shadow);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    border: 2px solid var(--hover-color);
+}
+.new-box a{
+    display: inline-block;
+
+    border-radius: 30px;
+    width:500px ;
+    margin-left: 200px;
+   cursor: pointer;
+   text-align: center;
+   padding: 10px;
+
+
 }
 .footer h2 {
     color: rgb(25, 25, 87);
